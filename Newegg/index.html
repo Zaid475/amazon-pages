@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Egg</title>
+    <style>
+        #parentnavbar {
+            border: 1px solid black;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        #neweggimage {
+            /* border: 1px solid red; */
+            width: 12%
+        }
+
+        #neweggimage>img {
+            margin-top: 10px;
+        }
+
+        #locationadrresssection {
+            /* border:1px solid green; */
+            width: 13%;
+            display: flex;
+        }
+
+        #location {
+            /* border:1px solid orange; */
+            margin-top: 24px;
+        }
+
+        #helloselectaddress {
+            /* border:1px solid mediumblue */
+            margin-left: 10px;
+        }
+
+        #searchbar {
+            /* border:2px solid greenyellow; */
+            width: 32%;
+        }
+
+        .search {
+            margin-top: 20px;
+            width: 350px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        #country {
+            margin-top: 30px;
+            /* border: 1px solid darkmagenta; */
+            width: 5%
+        }
+
+        #country>img {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        #signin {
+            /* border:1px solid goldenrod; */
+            width: 10%;
+            display: flex;
+        }
+
+        #icon {
+            /* border:1px solid */
+        }
+
+        #cart {
+            border: 1px solid black
+        }
+
+        #searchbar>span {
+            margin-top: 40px
+        }
+
+        #leftsection {
+            cursor: pointer;
+            /* border: 1px solid blue; */
+            height: 560px;
+            max-width: 400px;
+            margin-left: 25px;
+            border-radius: 10px;
+            background-color: #e3e0ff;
+            margin-top: 30px;
+        }
+
+        #firstcompsection {
+            display: flex;
+            /* border:1px solid black; */
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        #firstlefticon {
+            /* border:1px solid black; */
+            margin-left: 25px;
+        }
+
+        #firsttext {
+            /* border:1px solid black; */
+            margin-top: 5px;
+            margin-left: 8px;
+            color: #39383c
+        }
+
+        #firstrighticon {
+            /* border:1px solid black; */
+            margin-left: 150px;
+        }
+
+        #leftrightsection {
+            /* border: 1px solid green; */
+            margin-top: 20px;
+            display: flex;
+            height: 600px
+        }
+
+        #rightsection {
+            /* border: 1px solid orange; */
+            height: 600px;
+            width: 800px;
+            margin-left: 10px;
+
+        }
+
+        #firstposter {
+            /* border:1px solid maroon; */
+            height: 250px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+        #secondpostersection {
+            /* border:1px solid black; */
+            height: 300px;
+            display: flex;
+            margin-top: 15px
+        }
+
+        #leftposter {
+            /* border:1px dotted black; */
+            height: 300px;
+            width: 400px;
+        }
+
+        #rightposter {
+            /* border:1px dotted black; */
+            height: 300px;
+            width: 400px;
+
+        }
+
+        #topicks {
+            /* border: 1px solid blue; */
+            height: 320px;
+            width: 395px;
+            margin-left: 25px;
+            border-radius: 10px;
+            background-color: #e3e0ff;
+
+
+        }
+
+        #toppickssection {
+            display: flex;
+            /* border:1px solid blue; */
+        }
+
+        #toppicksright {
+            margin-left: 8px;
+            ;
+            /* border:1px solid red; */
+            width: 800px;
+            height: 320px;
+        }
+
+        #spotlightcontainer {
+            /* border:1px solid black; */
+            display: flex;
+            height: 80px;
+            width: 600px;
+        }
+
+        #seemore {
+            /* border:1px solid black; */
+            height: 50px;
+            margin-top: 33px;
+            margin-left: 10px;
+        }
+
+        #seemore {
+            color: #727272;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        #productssection {
+            /* border: 1px solid black; */
+            height: 300px;
+            display: flex;
+            width: 100%;
+        }
+
+        #product1section {
+            /* border: 1px solid black; */
+            width: 25%;
+            align-items: center;
+
+        }
+
+        #product2section {
+            /* border: 1px solid black; */
+            width: 25%;
+
+        }
+
+        #product3section {
+            /* border: 1px solid black; */
+            width: 25%;
+
+        }
+
+        #product4section {
+            /* border: 1px solid black; */
+            width: 25%;
+
+        }
+
+        #prod1imgcontainer {
+            /* border: 1px solid red; */
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        #rating {
+            /* border: 1px solid maroon; */
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #title{
+            /* border:1px solid green; */
+            margin-left: 20px;
+            height:50px;
+            
+        }
+        #price{
+            /* border:1px solid slateblue; */
+            height:40px;
+            margin-top: 5px;
+            margin-left:20px;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parentnavbar">
+        <div id="neweggimage">
+            <img src="./neweggimages/newegg.png" alt="No image" height="60px">
+
+        </div>
+
+        <div id="locationadrresssection">
+            <div id="location">
+                <span style="font-size: 35px;" class="material-symbols-outlined">
+                    location_on
+                </span>
+
+            </div>
+            <div id="helloselectaddress">
+                <p style="color:#9f9f9f">Hello</p>
+                <h5 style="font-family:Arial, Helvetica, sans-serif ; margin-bottom: 40px;">Select Address</h5>
+
+            </div>
+
+
+        </div>
+
+        <div id="searchbar">
+            <input class="search" type="text" placeholder="Enter product"></input>
+            <span
+                style="border:1px solid black;border-radius:15px;padding: 2px;margin-top: 20px;   height: 30px;width:30px;"
+                class="material-symbols-outlined">
+                search
+            </span>
+
+        </div>
+
+        <div id="country">
+            <img src="./neweggimages/india.png" width="20px" height="20px">
+
+        </div>
+
+        <div id="signin">
+            <div id="icon">
+                <span style="font-size: 40px;margin-top:22px" class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div style="margin-left:10px" id="welcome">
+                <p>Welcome</p>
+                <h4 style="font-family: Arial, Helvetica, sans-serif;">Sign In</h4>
+            </div>
+
+
+        </div>
+        <div id="orders">
+            <h4 style="margin-top: 40px;">Returns & Orders</h4>
+
+        </div>
+        <div id="cart">
+            <span style="font-size: 40px;margin-top: 22px;" class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="leftrightsection">
+        <div id="leftsection">
+
+            <div id="firstcompsection">
+                <div id="firstlefticon"> <span class="material-symbols-outlined">
+                        memory_alt
+                    </span></div>
+                <div id="firsttext">
+                    Components and Storage
+                </div>
+                <div id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        headphones
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Electronics
+                </div>
+                <div style="margin-left: 240px;" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        coffee_maker
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Appliances
+                </div>
+                <div style="margin-left:240px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+            <div id="firstcompsection">
+                <div id="firstlefticon"> <span class="material-symbols-outlined">
+                        sports_esports
+                    </span></div>
+                <div id="firsttext">
+                    Gaming
+                </div>
+                <div style="margin-left:260px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        wifi
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Networking
+                </div>
+                <div style="margin-left:235px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        coffee_maker
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Appliances
+                </div>
+                <div style="margin-left:240px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+
+            <div id="firstcompsection">
+                <div id="firstlefticon"> <span class="material-symbols-outlined">
+                        memory_alt
+                    </span></div>
+                <div id="firsttext">
+                    Components and Storage
+                </div>
+                <div id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        coffee_maker
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Appliances
+                </div>
+                <div style="margin-left:240px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        headphones
+                    </span>
+                </div>
+                <div id="firsttext">
+                    Electronics
+                </div>
+                <div style="margin-left: 240px;" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+            <div id="firstcompsection">
+                <div id="firstlefticon"> <span class="material-symbols-outlined">
+                        sports_esports
+                    </span></div>
+                <div id="firsttext">
+                    Gaming
+                </div>
+                <div style="margin-left:260px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="firstcompsection">
+                <div id="firstlefticon">
+                    <span class="material-symbols-outlined">
+                        pending
+                    </span>
+                </div>
+                <div id="firsttext">
+                    More
+                </div>
+                <div style="margin-left:277px" id="firstrighticon">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="rightsection">
+            <div id="firstposter">
+                <img height="250px" ; width="800px" src="./neweggimages/poster.jpeg">
+
+            </div>
+
+            <div id="secondpostersection">
+                <div id="leftposter">
+                    <img src="./neweggimages/WhatsApp Image 2024-09-28 at 6.34.37 PM.jpeg" height="300px" width="400px">
+                </div>
+                <div id="rightposter">
+                    <img src="./neweggimages/WhatsApp Image 2024-09-28 at 6.35.27 PM.jpeg" height="300px" width="400px">
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="toppickssection">
+        <div id="topicks">
+            <h1 style=" margin-left:10px; font-size: 25px; color:#05225e;font-family: Arial, Helvetica, sans-serif;">Top
+                Picks For You</h1>
+            <b>
+                <p style=" margin-left:15px;color:#05225e;font-size: 14px">Shop Now ►</p>
+            </b>
+            <div style="margin-left: 25px;">
+                <img src="./neweggimages/pngwing.com.png" height="200px" width="300px">
+            </div>
+
+
+        </div>
+        <div id="toppicksright">
+            <img src="./neweggimages/leftposter.jpg" width="800px" ; height="320px">
+
+        </div>
+    </div>
+
+    <div id="spotlightcontainer">
+        <div id="spotlight">
+            <h1 style="color:#09144f">Spotlight: PCs & Monitors</h1>
+        </div>
+        <div id="seemore">See more ►</div>
+
+    </div>
+
+    <div id="productssection">
+        <div id="product1section">
+            <div id="prod1imgcontainer">
+                <img src="./neweggimages/prod1.jpg" height="130px">
+            </div>
+            <div  style="color:orange"  id="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span  style="color:grey"  class="material-symbols-outlined">
+                    star
+                </span>
+                <span style="color:grey;">(12)</span>
+            </div>
+            <div id="title">
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Samsung 32" Odyssey G8 OLED 4K UHD 240Hz 0.03ms Smart Gaming Monitor... </p>
+            </div>
+            <div id="price">
+                <h3 style="  color:#212121">$1299/-</h3>
+            </div>
+        </div>
+        <div id="product2section">
+            <div id="prod1imgcontainer">
+                <img src="./neweggimages/nitrooo.png" height="130px">
+            </div>
+            <div  style="color:orange"  id="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span  style="color:grey"  class="material-symbols-outlined">
+                    star
+                </span>
+                <span style="color:grey;">(12)</span>
+            </div>
+            <div id="title">
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Acer 27" 170 Hz VA QHD gaming monitor FreeSync Premium (AMD Adaptive Sync)..</p>
+            </div>
+            <div id="price">
+                <h3 style="  color:#212121">$1099/-</h3>
+            </div>
+        </div>
+        <div id="product3section">
+            <div id="prod1imgcontainer">
+                <img src="./neweggimages/prod3.jpg" height="130px">
+            </div>
+            <div  style="color:orange"  id="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span  style="color:grey"  class="material-symbols-outlined">
+                    star
+                </span>
+                <span style="color:grey;">(12)</span>
+            </div>
+            <div id="title">
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">IPASON - Gaming desktop - AMD Ryzen 5 5600G 6 core 3.9GHz - 16GB ... </p>
+            </div>
+            <div id="price">
+                <h3 style="  color:#212121">$1189/-</h3>
+            </div>
+        </div>
+        <div id="product4section">
+            <div id="prod1imgcontainer">
+                <img src="./neweggimages/prod4.jpg" height="130px">
+            </div>
+            <div  style="color:orange"  id="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span  style="color:grey"  class="material-symbols-outlined">
+                    star
+                </span>
+                <span style="color:grey;">(12)</span>
+            </div>
+            <div id="title">
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">MSI Prestige 16 AI EVO 16" QHD+ Ultra Thin Professional Laptop Intel® Core™... </p>
+            </div>
+            <div id="price">
+                <h3 style="  color:#212121">$1150/-</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
