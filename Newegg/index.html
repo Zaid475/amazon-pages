@@ -9,11 +9,12 @@
     <title>New Egg</title>
     <style>
         #parentnavbar {
-            border: 1px solid black;
-            height: 100px;
+            border-top: 1px solid #e8e8e8;
+            height: 85px;
             display: flex;
             justify-content: space-between;
             width: 100%;
+            background-color:lightgoldenrodyellow;
         }
 
         #neweggimage {
@@ -42,15 +43,38 @@
         }
 
         #searchbar {
-            /* border:2px solid greenyellow; */
+            /* border:1px solid greenyellow; */
             width: 32%;
+            display:flex;
+            padding: none;
+            background-color:#eae7fc ;
+            border-radius: 10px;
+            height:50px;
+            margin-top:20px;
         }
 
         .search {
-            margin-top: 20px;
-            width: 350px;
+            margin-top: 6px;
+            width: 380px;
             height: 40px;
-            border-radius: 20px;
+            border:none;
+            /* border-radius: 20px; */
+            background-color: #eae7fc;
+           
+        }
+        .search:hover{
+            border:0px solid #eae7fc;
+        }
+        #glass{
+            border:1px solid black;
+            border-radius:7px;
+            background-color: #1946b8;
+            color:white;
+            width:50px;
+            
+          
+           
+           
         }
 
         #country {
@@ -77,7 +101,7 @@
         }
 
         #cart {
-            border: 1px solid black
+            /* border: 1px solid black */
         }
 
         #searchbar>span {
@@ -188,8 +212,9 @@
         #spotlightcontainer {
             /* border:1px solid black; */
             display: flex;
-            height: 80px;
+            height: 50px;
             width: 600px;
+            margin-top: 20px;
         }
 
         #seemore {
@@ -209,7 +234,7 @@
             height: 300px;
             display: flex;
             width: 100%;
-            cursor:pointer;
+            cursor: pointer;
         }
 
         #product1section {
@@ -248,35 +273,106 @@
             margin-left: 20px;
             margin-top: 10px;
         }
-        #title{
+
+        #title {
             /* border:1px solid green; */
             margin-left: 20px;
-            height:50px;
-            
+            height: 50px;
+
         }
-        #price{
+
+        #price {
             /* border:1px solid slateblue; */
-            height:40px;
+            height: 40px;
             margin-top: 5px;
-            margin-left:20px;
+            margin-left: 20px;
             margin-bottom: 20px;
+
+        }
+
+        #aboutussection {
+            border: 1px solid black;
+            background-color: rgb(118, 118, 163);
+            width: 490px;
+            height: 100px;
+            word-wrap: break-word;
+            transition: width 1s, height 1s, border-radius 1s;
+        }
+
+        #aboutussection:hover {
+            border-radius: 5px;
+            width: 600px;
+            height: 120px;
+            border-radius: 5px;
+            ;
+
+        }
+
+        #brandsection {
+            display: flex;
+            /* border: 1px solid black; */
+            height: 150px;
+            width: 100%;
+
+
+
+        }
+
+        .brand {
+            /* border: 1px solid black; */
+            width: 25%;
+            margin-left: 20px;
+        }
+
+        .spotlight2 {
+            /* border:1px solid red; */
+            border-top: 50px;
+        }
+
+        #copyrightsection {
+            display: flex;
+            /* border:1px solid red; */
+        }
+
+        #socialrightsection {
+            /* border:1px solid blue; */
+            width: 350px;
+            margin-left: 940px;
+        }
+
+        #copyright {
+            /* border:1px solid black; */
+            width: 200px;
+        }
+
+        #secondnavbar {
+            border-bottom: 1px solid #e8e8e8;
+            height: 40px;
+            display: flex;
+            width: 100%;
+            background-color: lightgoldenrodyellow;
             
         }
-        #aboutussection{
-            border:1px solid black;
-            background-color:rgb(118, 118, 163);           width:490px;
-            height:100px;
-            word-wrap:break-word;
-            transition: width 1s,height 1s,border-radius 1s;
-        }
-        #aboutussection:hover{
-            border-radius:5px;
-            width:600px;
-            height:150px;
-            border-radius: 5px;;
+
+        #lefticon {
+            /* border: 1px solid red; */
+            height: 20px;
+
 
         }
 
+        #menu {
+            /* border: 1px solid red; */
+            height: 20px;
+            margin-left: 5px;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+
+
+
+        }
     </style>
 </head>
 
@@ -305,11 +401,12 @@
 
         <div id="searchbar">
             <input class="search" type="text" placeholder="Enter product"></input>
-            <span
-                style="border:1px solid black;border-radius:15px;padding: 2px;margin-top: 20px;   height: 30px;width:30px;"
+           <div id="glass"> <span
+                style=" border-radius:15px;padding: 2px;margin-top: 8px;margin-left: 8px;  height: 39px;width:40px;"
                 class="material-symbols-outlined">
                 search
             </span>
+        </div>
 
         </div>
 
@@ -345,6 +442,31 @@
 
 
 
+    </div>
+    <div id="secondnavbar">
+        <div id="lefticon">
+            <span style="color:#505050" class="material-symbols-outlined">
+                menu
+            </span>
+
+        </div>
+        <div style="color:#505050" id="menu">
+            Menu
+        </div>
+        <div> <span class="material-symbols-outlined">
+                arrow_drop_down
+            </span></div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >  Newegg + Deals</div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >Shell Deals</div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >PC Builder</div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >Best Sellers</div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >Clearance Deals</div>
+        <div style="color:#505050;width: 10% ; font-size: 15px;margin-top: 5px;font-weight: bold; " >Offers Available</div>
+        <div style="color:#505050;width: 12% ; color:blue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 15px;margin-top: 5px;font: weight 90%; " >NEWEGGBUSINESS</div>
+        <div style="color:#505050;width: 10% ; color:blue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 15px;margin-top: 5px;font: weight 90%; " >HELP CENTER</div>
+        <div style="color:#505050;width: 10% ; color:blue; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 15px;margin-top: 5px;font: weight 90%; " >INFORMATION</div>
+
+       
     </div>
     <div id="leftrightsection">
         <div id="leftsection">
@@ -602,7 +724,7 @@
             <div id="prod1imgcontainer">
                 <img src="./neweggimages/prod1.jpg" height="130px">
             </div>
-            <div  style="color:orange"  id="rating">
+            <div style="color:orange" id="rating">
                 <span class="material-symbols-outlined">
                     star
                 </span>
@@ -615,13 +737,14 @@
                 <span class="material-symbols-outlined">
                     star
                 </span>
-                <span  style="color:grey"  class="material-symbols-outlined">
+                <span style="color:grey" class="material-symbols-outlined">
                     star
                 </span>
                 <span style="color:grey;">(12)</span>
             </div>
             <div id="title">
-                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Samsung 32" Odyssey G8 OLED 4K UHD 240Hz 0.03ms Smart Gaming Monitor... </p>
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Samsung 32" Odyssey
+                    G8 OLED 4K UHD 240Hz 0.03ms Smart Gaming Monitor... </p>
             </div>
             <div id="price">
                 <h3 style="  color:#212121">$1299/-</h3>
@@ -632,7 +755,7 @@
             <div id="prod1imgcontainer">
                 <img src="./neweggimages/nitrooo.png" height="130px">
             </div>
-            <div  style="color:orange"  id="rating">
+            <div style="color:orange" id="rating">
                 <span class="material-symbols-outlined">
                     star
                 </span>
@@ -645,13 +768,14 @@
                 <span class="material-symbols-outlined">
                     star
                 </span>
-                <span  style="color:grey"  class="material-symbols-outlined">
+                <span style="color:grey" class="material-symbols-outlined">
                     star
                 </span>
                 <span style="color:grey;">(12)</span>
             </div>
             <div id="title">
-                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Acer 27" 170 Hz VA QHD gaming monitor FreeSync Premium (AMD Adaptive Sync)..</p>
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">Acer 27" 170 Hz VA
+                    QHD gaming monitor FreeSync Premium (AMD Adaptive Sync)..</p>
             </div>
             <div id="price">
                 <h3 style="  color:#212121">$1099/-</h3>
@@ -662,7 +786,7 @@
             <div id="prod1imgcontainer">
                 <img src="./neweggimages/prod3.jpg" height="130px">
             </div>
-            <div  style="color:orange"  id="rating">
+            <div style="color:orange" id="rating">
                 <span class="material-symbols-outlined">
                     star
                 </span>
@@ -675,13 +799,14 @@
                 <span class="material-symbols-outlined">
                     star
                 </span>
-                <span  style="color:grey"  class="material-symbols-outlined">
+                <span style="color:grey" class="material-symbols-outlined">
                     star
                 </span>
                 <span style="color:grey;">(12)</span>
             </div>
             <div id="title">
-                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">IPASON - Gaming desktop - AMD Ryzen 5 5600G 6 core 3.9GHz - 16GB ... </p>
+                <p style="font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">IPASON - Gaming
+                    desktop - AMD Ryzen 5 5600G 6 core 3.9GHz - 16GB ... </p>
             </div>
             <div id="price">
                 <h3 style="  color:#212121">$1189/-</h3>
@@ -692,7 +817,7 @@
             <div id="prod1imgcontainer">
                 <img src="./neweggimages/prod4.jpg" height="130px">
             </div>
-            <div  style="color:orange"  id="rating">
+            <div style="color:orange" id="rating">
                 <span class="material-symbols-outlined">
                     star
                 </span>
@@ -705,13 +830,14 @@
                 <span class="material-symbols-outlined">
                     star
                 </span>
-                <span  style="color:grey"  class="material-symbols-outlined">
+                <span style="color:grey" class="material-symbols-outlined">
                     star
                 </span>
                 <span style="color:grey;">(12)</span>
             </div>
             <div id="title">
-                <p style=" font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">MSI Prestige 16 AI EVO 16" QHD+ Ultra Thin Professional Laptop Intel® Core™... </p>
+                <p style=" font-size:15px; color:#505050;font-family: Arial, Helvetica, sans-serif;">MSI Prestige 16 AI
+                    EVO 16" QHD+ Ultra Thin Professional Laptop Intel® Core™... </p>
             </div>
             <div id="price">
                 <h3 style="  color:#212121">$1150/-</h3>
@@ -724,13 +850,55 @@
     <br>
     <br>
     <br>
-    
-    <h1 class="aboutus">About Us</h1>
+
+    <h1 class="aboutus" style="color:#09144f" color:#09144f>About Us</h1>
     <div id="aboutussection">
         eeeuuuuuuuuuuuuuuulpkfrekferjfjrjfirfnerfnerngerjgbergbigbrbg4bg4rbg4rbgirbgirbgi4rbguirbngiubrguir4bgiub4rgiu4g4uuuuuuuuuuuuuuwdedwedwweeweweweweweweweweweweweuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwi
 
     </div>
-    
+
+    <div id="spotlightcontainer">
+        <div id="spotlight" class="spotlight2">
+            <h1 style="color:#09144f">Featured Brands</h1>
+        </div>
+        <div id="seemore">See more ►</div>
+
+    </div>
+    <br>
+    <br>
+
+    <div id="brandsection">
+        <div id="brand1" class="brand">
+            <img src="./neweggimages/ABS.jpg" width="250px" height="130px;">
+        </div>
+        <div id="brand2" class="brand">
+            <img src="./neweggimages/AMD.jpg" width="250px" height="130px;">
+        </div>
+        <div id="brand3" class="brand">
+            <img src="./neweggimages/ASUS.jpg" width="250px" height="130px;">
+        </div>
+        <div id="brand4" class="brand">
+            <img src="./neweggimages/GIGABYTE.jpg" width="250px" height="130px;">
+
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+    <div id="copyrightsection">
+        <div id="copyright" style="color:#09144f">
+            © 2000-2024 Newegg Inc.All rights reserved.
+        </div>
+        <div id="socialrightsection">
+            <img src="./neweggimages/insta.png">
+            <img style="margin-bottom: 6px; margin-left:10px; ;" src="./neweggimages/fb.png" height="35px">
+            <img style="margin-bottom: 3px;margin-left:10px; " src="./neweggimages/twitter.png">
+        </div>
+    </div>
+
+
 
 
 
